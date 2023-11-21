@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/public/output.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page Final</title>
+</head>
+<body class="bg-white">
+    <!--Body begins here-->
+    <main class="flex flex-col min-h-screen bg-blue-400 rounded-lg ml-0.5 mr-0.5 ">
+        <div class="mr-8 ml-4 mt-8 h-full flex flex-col ">
+            <!--Underlay/Main Section-->
+            <div class="container mx-auto  bg-white rounded-t-lg">
+                <Header class="py-11 px-10">
+                    <div class="mx-auto max-w-7xl px-5 lg:px-9">
+                        <nav class="relative z-50 flex justify-between">
+                            <div class="flex items-center md:gap-x-12">
+                                <div class="group inline-flex space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="blue" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <a aria-label="Home" href="#" class="text-3xl">Tax<span class="relative whitespace-nowrap text-3xl text-semibold text-blue-600">pal</span></a>
+                                </div>
+                                <div class="hidden md:flex md:gap-x-6">
+                                    <a class="inline-block rounded-lg px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="#">Features</a>
+                                    <a class="inline-block rounded-lg px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="#">Testimonials</a>
+                                    <a class="inline-block rounded-lg px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="#">Pricing</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-x-5 md:gap-x-8">
+                                <div class="hidden md:block">
+                                    <a class="inline-block rounded-lg px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="#">Sign in</a>
+                                </div>
+                                <a class="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-blue-600 text-white hover:text-slate-100 hover:bg-blue-400 active:bg-blue-800
+                                active:text-blue-100 focus-visible:outline-blue-600" href="/register"><span>Get started <span class="hidden lg:inline lg:whitespace-nowrap">today</span></span></a>
+                            </div>
+                        </nav>
+                    </div>
+                </Header>
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16 pt-20 text-center lg:pt-32 border-b border-gray-500"><!--Element contains underlay section-->
+                    <h1 class="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
+                        Accounting 
+                        <span>
+                            <span class="relative whitespace-nowrap text-blue-600">made simple</span>
+                        </span> for small businesses
+                    </h1>
+                    <p class="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
+                        Most bookkeeping software is accurate but hard to use. We make use of opposite trade-off, and hope you don't get audited.
+                    </p>
+                    <div class="mt-10 flex justify-center gap-x-6">
+                        <a class="rounded-full py-2 px-4 inline-flex group items-center justify-center text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-200 active:bg-slate-800
+                        active:text-slate-300 focus-visible:outline-slate-900" href="#register">Get 6 months free</a>
+                        <a class="group inline-flex items-center justify-center ring-1 rounded-full py-2 px-4 text-sm focus:outline-none ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-slate-400 active:bg-slate-200 active:text-slate-700 focus-visible:outline-blue-600 focus-visible:ring-slate-300" href="#Youtube">
+                            <svg fill="blue" class="h-3 w-3" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"></path>
+                            </svg>
+                            <span class="ml-3">Watch Video</span>
+                        </a>
+                    </div>
+                        <div class="mt-36 lg:mt-48">
+                                <p class="font-display text-base text-slate-900">
+                                Trusted by these six companies so far
+                                </p>
+                            <ul class="mt-8 flex items-center justify-center gap-x-8 sm:flex-col sm:gap-x-0 sm:gap-y-10 xl:flex-row xl:gap-x-12 xl:gap-y-0" role="list">
+                                    <ul class="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0" role="list">
+                                        <li class="flex"> <img src="/img/transistor.svg" alt="transistor logo" style="color:transparent" width="160" height="50" loading="lazy"></li>
+                                        <li class="flex"> <img src="/img/tuple.svg" alt="tuple logo"  style="color: transparent;" width="160" height="50" loading="lazy"></li>
+                                        <li class="flex"><img src="/img/salient.svg" alt="Salient logo" style="color: transparent;" width="160" height="50" loading="lazy"></li>
+                                    </ul>
+                                    <ul class="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0" role="list">
+                                        <li class="flex"> <img src="/img/mirage.svg" alt="Mirage logo" style="color:transparent" width="160" height="50" loading="lazy"></li>
+                                        <li class="flex"> <img src="/img/laravel.svg" alt="laravel logo"  style="color: transparent;" width="160" height="50" loading="lazy"></li>
+                                        <li class="flex"><img src="/img/statamic.svg" alt="statamic logo" style="color: transparent;" width="160" height="50" loading="lazy"></li>
+                                    </ul>   
+                            </ul>
+                        </div>
+                </div>
+            </div>
+            <div class= "text-white text-center text-6xl font-normal container mx-auto bg-blue-700 py-16">
+                Everything you need to run your business
+                <p class="text-xs py-6">This website is a proffesional front-end design. We struggle to give you the best.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

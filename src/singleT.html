@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/public/output.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>table section 1</title>
+</head>
+
+<body class="bg-slate-100">
+    <main class="text-sm md:text-lg w-full">
+        <div class="bg-white flex justify-between w-full"> 
+            <div class="my-2 text-2xl tracking tracking-widest text-gray-400 font-bold">...</div>
+            <div class="my-2 ">
+                <form>
+                    <label for="default_search"
+                        class="mb-2 text-sm font-medium text-gray-900 sr-only px-4 md:px-10">taxpal.com</label>
+                    <input type="search" id="default_search"
+                        class="block w-full h-2 py-4 px-2 md:px-14 text-sm text-gray-800 text-center border border-gray-400 rounded-lg bg-gray-100"
+                        placeholder="taxpal.com">
+                </form>
+            </div>
+            <div></div>
+        </div>
+        <div class="flex">
+            <div class="w-1/4 flex flex-col space-y-7 h-screen text-xs md:ml-2 lg:ml-4">
+                <div class=" inline-flex items-center ml-0 space-x-2">
+                    <div>
+                        <svg fill="blue" class="h-5 w-5" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="font-bold text-2xl px-1">
+                        Tax<span class="text-blue-600">pal</span>
+                    </div>
+                </div>
+                <div class="flex grow flex-col justify-between mx-auto ml-0">
+
+                    <nav class="font-normal text-sm ml-2 rounded-md">
+                        <ul class="text-inherit space-y-2 cursor-pointer">
+                            <li class="hover:text-blue-500">Overview</li>
+                            <li class="hover:text-blue-500">Contacts</li>
+                            <li class="hover:text-blue-500">Bills</li>
+                            <li class="hover:text-blue-500">Expenses</li>
+                            <li class="hover:text-blue-500">Banking</li>
+                            <li class="hover:text-blue-500">Taxes</li>
+                            <li class="hover:text-blue-500">Accounting</li>
+                        </ul>
+                    </nav>
+                    <button class="border bg-gray-300 rounded-lg mx-auto inline-flex items-center text-lg">
+                        <div class="pr-3">
+                            <svg fill="none" relative inline-flex items-center class="h-4 w-4 m-0" stroke="currentColor"
+                                stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M14.25 9v6m-4.5 0V9M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <div class=""><span class="font-semibold text-xs md:text-lg">Wireframe,inc</span></div>
+                    </button>
+
+                </div>
+            </div>
+                <div class=" w-3/4 m-10 bg-white h-screen rounded-t-2xl overflow-auto text-xs md:text-lg">
+                    <table class=" w-full text-sm text-left overflow-x-auto text-gray-500 mb-20 rounded-tl-2xl">
+                        <caption class="bg-white rounded-t-md text-lg text-gray-700 text-left h-12 ">
+                            <div class="flex justify-between">
+                                <div class="font-bold px-4 py-3">Payroll</div>
+                                <div class="order-last px-5 py-4">
+                                    <svg fill="none" class="h-5 w-5 hover:shadow-md stroke-blue-500"
+                                        stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </caption>
+
+                        <thead class="text-sm text-gray-700 bg-gray-50">
+                            <tr class="text-sm font-medium text-gray-700">
+                                <th scope="col" class="p-4 border-b border-t">
+                                    <div class="flex items-center">
+                                        <input id="checkbox-all-search" type="checkbox"
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-md shadow-md focus:ring-blue-500 focus:ring-2 ">
+                                        <label for="checkbox-all-search" class="sr-only">checkbox</label>
+                                    </div>
+                                </th>
+                                <th scope="col" class="px-6 py-3 border-b border-t whitespace-nowrap">
+                                    Name
+                                </th>
+                                <th scope="col" class="px-6 py-3 border whitespace-nowrap">
+                                    Total Pay <span class="text-gray-300">(per annum)</span>
+                                </th>
+                                <th scope="col" class="px-6 py-3 border whitespace-nowrap">
+                                    Tax<span class="text-gray-300"> 20%</span>
+                                </th>
+                                <th scope="col" class="px-6 py-3 border whitespace-nowrap">
+                                    NI
+                                </th>
+                                <th scope="col" class="px-6 py-3 border whitespace-nowrap">
+                                    Net Pay<span class="text-gray-300">(per annum)</span>
+                                </th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr
+                                class="bg-white border-b hover:bg-slate-200 cursor-pointer">
+                                <td class="w-4 p-4">
+                                    <div class="flex items-center">
+                                        <input id="checkbox-all-search" type="checkbox"
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-md shadow-md focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="checkbox-all-search" class="sr-only">checkbox</label>
+                                    </div>
+                                </td>
+                                <th scope="row"
+                                    class="px-6 py-4 font-medium text-gray-700 whitespace-nowrap ">
+                                    Stacey Bobb
+                                </th>
+                                <td class="px-6 py-4 text-center">
+                                    $1,900.00
+                                </td>
+                                <td class="px-6 py-4">
+                                    $300.00
+                                </td>
+                                <td class="px-6 py-4">
+                                    $314.00
+                                </td>
+                                <td class="px-6 py-4">
+                                    $18,540.00
+                                    </th>
+                            </tr>
+                            <tr
+                                class="border-b bg-gray-50 hover:bg-slate-200 cursor-pointer">
+                                <th scope="col" class="p-4">
+                                    <div class="flex items-center">
+                                        <input id="checkbox-all-search" type="checkbox"
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-md shadow-md focus:ring-blue-500 focus:ring-2">
+                                        <label for="checkbox-all-search" class="sr-only">checkbox</label>
+                                    </div>
+                                </th>
+                                <th scope="row"
+                                    class="px-6 py-4 font-medium text-gray-700 whitespace-nowrap ">
+                                    Derek Forbes
+                                </th>
+                                <td class="px-6 py-4 text-center">
+                                    $1,205.00
+                                </td>
+                                <td class="px-6 py-4">
+                                    $300.00
+                                </td>
+                                <td class="px-6 py-4">
+                                    $314.00
+                                </td>
+                                <td class="px-6 py-4">
+                                    $19,500.00
+                                </td>
+                            </tr>
+                            <tr
+                                class="bg-white border-b hover:bg-slate-200 cursor-pointer">
+                                <th scope="col" class="p-4">
+                                    <div class="flex items-center">
+                                        <input id="checkbox-all-search" type="checkbox"
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-md shadow-md focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="checkbox-all-search" class="sr-only">checkbox</label>
+                                    </div>
+                                </th>
+                                <th scope="row"
+                                    class="px-6 py-4 font-medium text-gray-700 whitespace-nowrap ">
+                                    Garth Leemow
+                                </th>
+                                <td class="px-6 py-4 text-center">
+                                    $1,900.00
+                                </td>
+                                <td class="px-6 py-4">
+                                    $200.00
+                                </td>
+                                <td class="px-6 py-4">
+                                    $314.00
+                                </td>
+                                <td class="px-6 py-4">
+                                    $18,540.00
+                                </td>
+                            </tr>
+                            <tr
+                                class="border-b bg-gray-50 hover:bg-slate-200 cursor-pointer">
+                                <th scope="col" class="p-4">
+                                    <div class="flex items-center">
+                                        <input id="checkbox-all-search" type="checkbox"
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-md shadow-md focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="checkbox-all-search" class="sr-only">checkbox</label>
+                                    </div>
+                                </th>
+                                <th scope="row"
+                                    class="px-6 py-4 font-medium text-gray-700 whitespace-nowrap ">
+                                    Ilyssa Bodah
+                                </th>
+                                <td class="px-6 py-4 text-center">
+                                    $1,200.00
+                                </td>
+                                <td class="px-6 py-4">
+                                    $400.00
+                                </td>
+                                <td class="px-6 py-4">
+                                    $314.00
+                                </td>
+                                <td class="px-6 py-4">
+                                    $12,000.00
+                                </td>
+                            </tr>
+                            <tr
+                                class="bg-white border-b hover:bg-slate-200 cursor-pointer">
+                                <td class="w-4 p-4">
+                                    <div class="flex items-center">
+                                        <input id="checkbox-all-search" type="checkbox"
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-md shadow-md focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="checkbox-all-search" class="sr-only">checkbox</label>
+                                    </div>
+                                </td>
+                                <th scope="row"
+                                    class="px-6 py-4 font-medium text-gray-700 whitespace-nowrap ">
+                                    Bernard Timm
+                                </th>
+                                <td class="px-6 py-4 text-center">
+                                    $3,900.00
+                                </td>
+                                <td class="px-6 py-4">
+                                    $500.00
+                                </td>
+                                <td class="px-6 py-4">
+                                    $314.00
+                                </td>
+                                <td class="px-6 py-4">
+                                    $28,560.00
+                                </td>
+                            </tr>
+                            <tr
+                                class="border-b bg-gray-50  hover:bg-slate-200 cursor-pointer">
+                                <th scope="col" class="p-4">
+                                    <div class="flex items-center">
+                                        <input id="checkbox-all-search" type="checkbox"
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-md shadow-md focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="checkbox-all-search" class="sr-only">checkbox</label>
+                                    </div>
+                                </th>
+                                <th scope="row"
+                                    class="px-6 py-4 font-medium text-gray-700 whitespace-nowrap ">
+                                    Rabbi Ferouz
+                                </th>
+                                <td class="px-6 py-4 text-center">
+                                    $1,205.00
+                                </td>
+                                <td class="px-6 py-4 ">
+                                    $300.00
+                                </td>
+                                <td class="px-6 py-4">
+                                    $314.00
+                                </td>
+                                <td class="px-6 py-4">
+                                    $12,110.00
+                                </td>
+                            </tr>
+                            <tr
+                                class="bg-white border-b hover:bg-slate-200 cursor-pointer">
+                                <td class="w-4 p-4">
+                                    <div class="flex items-center">
+                                        <input id="checkbox-all-search" type="checkbox"
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-md shadow-md focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="checkbox-all-search" class="sr-only">checkbox</label>
+                                    </div>
+                                </td>
+                                <th scope="row"
+                                    class="px-6 py-4 font-medium text-gray-700 whitespace-nowrap ">
+                                    Sam Ruprecht
+                                </th>
+                                <td class="px-6 py-4 text-center">
+                                    $1,900.00
+                                </td>
+                                <td class="px-6 py-4">
+                                    $150.00
+                                </td>
+                                <td class="px-6 py-4">
+                                    $314.00
+                                </td>
+                                <td class="px-6 py-4">
+                                    $13,880.00
+                                </td>
+                            </tr>
+                            <tr
+                                class="border-b bg-gray-50 hover:bg-slate-200 cursor-pointer">
+                                <th scope="col" class="p-4">
+                                    <div class="flex items-center">
+                                        <input id="checkbox-all-search" type="checkbox"
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-md shadow-md focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="checkbox-all-search" class="sr-only">checkbox</label>
+                                    </div>
+                                </th>
+                                <th scope="row"
+                                    class="px-6 py-4 font-medium text-gray-700 whitespace-nowrap  mb-32">
+                                    Darren Crabb
+                                </th>
+                                <td class="px-6 py-4 text-center">
+                                    $5,205.00
+                                </td>
+                                <td class="px-6 py-4">
+                                    $180.00
+                                </td>
+                                <td class="px-6 py-4">
+                                    $314.00
+                                </td>
+                                <td class="px-6 py-4">
+                                    $110,540.00
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
